@@ -1,0 +1,26 @@
+dependencies: \
+  /Users/stephenmckeown/code/runningMate/node_modules/react-native/third-party/folly-2018.10.22.00/folly/container/detail/F14Table.cpp \
+  /Users/stephenmckeown/code/runningMate/node_modules/react-native/third-party/folly-2018.10.22.00/folly/container/detail/F14Table.h \
+  /Users/stephenmckeown/code/runningMate/node_modules/react-native/third-party/folly-2018.10.22.00/folly/Bits.h \
+  /Users/stephenmckeown/code/runningMate/node_modules/react-native/third-party/folly-2018.10.22.00/folly/lang/Bits.h \
+  /Users/stephenmckeown/code/runningMate/node_modules/react-native/third-party/folly-2018.10.22.00/folly/ConstexprMath.h \
+  /Users/stephenmckeown/code/runningMate/node_modules/react-native/third-party/folly-2018.10.22.00/folly/Portability.h \
+  /Users/stephenmckeown/code/runningMate/node_modules/react-native/third-party/folly-2018.10.22.00/folly/portability/Config.h \
+  /Users/stephenmckeown/code/runningMate/node_modules/react-native/third-party/folly-2018.10.22.00/folly/CPortability.h \
+  /Users/stephenmckeown/code/runningMate/node_modules/react-native/third-party/folly-2018.10.22.00/folly/Utility.h \
+  /Users/stephenmckeown/code/runningMate/node_modules/react-native/third-party/folly-2018.10.22.00/folly/Traits.h \
+  /Users/stephenmckeown/code/runningMate/node_modules/react-native/third-party/folly-2018.10.22.00/folly/lang/Assume.h \
+  /Users/stephenmckeown/code/runningMate/node_modules/react-native/third-party/folly-2018.10.22.00/folly/portability/Builtins.h \
+  /Users/stephenmckeown/code/runningMate/node_modules/react-native/third-party/folly-2018.10.22.00/folly/Likely.h \
+  /Users/stephenmckeown/code/runningMate/node_modules/react-native/third-party/folly-2018.10.22.00/folly/ScopeGuard.h \
+  /Users/stephenmckeown/code/runningMate/node_modules/react-native/third-party/folly-2018.10.22.00/folly/Preprocessor.h \
+  /Users/stephenmckeown/code/runningMate/node_modules/react-native/third-party/folly-2018.10.22.00/folly/lang/UncaughtExceptions.h \
+  /Users/stephenmckeown/code/runningMate/node_modules/react-native/third-party/folly-2018.10.22.00/folly/functional/ApplyTuple.h \
+  /Users/stephenmckeown/code/runningMate/node_modules/react-native/third-party/folly-2018.10.22.00/folly/functional/Invoke.h \
+  /Users/stephenmckeown/code/runningMate/node_modules/react-native/third-party/folly-2018.10.22.00/folly/lang/Align.h \
+  /Users/stephenmckeown/code/runningMate/node_modules/react-native/third-party/folly-2018.10.22.00/folly/lang/Exception.h \
+  /Users/stephenmckeown/code/runningMate/node_modules/react-native/third-party/folly-2018.10.22.00/folly/CppAttributes.h \
+  /Users/stephenmckeown/code/runningMate/node_modules/react-native/third-party/folly-2018.10.22.00/folly/lang/Launder.h \
+  /Users/stephenmckeown/code/runningMate/node_modules/react-native/third-party/folly-2018.10.22.00/folly/lang/SafeAssert.h \
+  /Users/stephenmckeown/code/runningMate/node_modules/react-native/third-party/folly-2018.10.22.00/folly/container/detail/F14Defaults.h \
+  /Users/stephenmckeown/code/runningMate/node_modules/react-native/third-party/folly-2018.10.22.00/folly/container/detail/F14IntrinsicsAvailability.h
