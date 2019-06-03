@@ -35,5 +35,15 @@ global.styles = {
   },
   rowSelect: {
     backgroundColor: 'gray'
-  }
+  },
+  loginScreenButton: {
+    margin: 10,
+    height: 40,
+    width: 280,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#66b707',
+    borderRadius: 10,
+
+  },
 }
