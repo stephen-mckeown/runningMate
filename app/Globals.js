@@ -44,6 +44,26 @@ global.styles = {
     alignItems: 'center',
     backgroundColor: '#66b707',
     borderRadius: 10,
-
   },
+
+    buttonGeoStart: {
+      margin: 10,
+      height: 40,
+      width: 280,
+      justifyContent: 'center',
+      alignItems: 'center',
+      backgroundColor: '#66b707',
+      borderRadius: 10,
+    },
+    buttonGeoStop: {
+      margin: 10,
+      height: 40,
+      width: 280,
+      justifyContent: 'center',
+      alignItems: 'center',
+      backgroundColor: 'red',
+      borderRadius: 10,
+    },
+
+  
 }
