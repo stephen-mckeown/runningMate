@@ -17,20 +17,37 @@ class DailyPlan extends Component {
     super(props);
     this.state = {
       start: false,
-      stop: true
+      stop: true,
+      location:'',
+      display: false
     };
   }
 
   _startGeoLocation = () => {
-    this.setState({start: true,
-                    stop: false})
+    this.setState({
+                start: true,
+                stop: false,
+                display:false
+                })
+    this._getGeoLocation();           
   }
 
   _stopGeoLocation = () => {
     this.setState({
       start: false,
-      stop: true
+      stop: true,
+      display: true
     })
+  }
+
+  _getGeoLocation = () => {
+    navigator.geolocation.getCurrentPosition(
+      position => {const location = JSON.stringify(position);
+        this.setState({ location });
+    },
+  error => Alert.alert(error.message),
+    { enableHighAccuracy: true, timeout: 20000, maximumAge: 1000 }
+  );
   }
 
 
@@ -61,6 +78,7 @@ class DailyPlan extends Component {
             </TouchableOpacity>
           }
         </View>
+        {this.state.display ? <Text>Location: {this.state.location}</Text> : null}
       </View>
     );
   }
