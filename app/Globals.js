@@ -64,6 +64,11 @@ global.styles = {
       backgroundColor: 'red',
       borderRadius: 10,
     },
+  map: {
+    height:500,
+    width:500,
+    ...StyleSheet.absoluteFillObject,
+  },
 
   
 }

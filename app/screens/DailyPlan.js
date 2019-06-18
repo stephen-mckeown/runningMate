@@ -7,6 +7,8 @@ import {
   Button,
   TouchableOpacity
 } from 'react-native';
+import MapView from 'react-native-maps';
+
 
 const styles = StyleSheet.create(global.styles);
 
@@ -55,6 +57,7 @@ class DailyPlan extends Component {
   render() {
     const {Day, Time} = this.props.navigation.getParam("item", 'Error');
     return (
+      <View>
       <View style={styles.container}>
        
         <Text>{Day}'s Plan</Text>
@@ -79,6 +82,18 @@ class DailyPlan extends Component {
           }
         </View>
         {this.state.display ? <Text>Location: {this.state.location}</Text> : null}
+      </View>
+        <View>
+        <MapView
+            style={styles.map}
+          initialRegion={{
+            latitude: 37.78825,
+            longitude: -122.4324,
+            latitudeDelta: 0.0922,
+            longitudeDelta: 0.0421,
+          }}
+        />
+        </View>
       </View>
     );
   }
