@@ -10,6 +10,8 @@ import {
 import MapView from 'react-native-maps';
 
 
+
+
 const styles = StyleSheet.create(global.styles);
 
 
@@ -21,8 +23,13 @@ class DailyPlan extends Component {
       start: false,
       stop: true,
       location:'',
-      display: false
+      display: false,
+      coords: null,
+      
     };
+  }
+  componentDidMount() {
+    this._getGeoLocation()
   }
 
   _startGeoLocation = () => {
@@ -30,8 +37,7 @@ class DailyPlan extends Component {
                 start: true,
                 stop: false,
                 display:false
-                })
-    this._getGeoLocation();           
+                })      
   }
 
   _stopGeoLocation = () => {
@@ -44,18 +50,17 @@ class DailyPlan extends Component {
 
   _getGeoLocation = () => {
     navigator.geolocation.getCurrentPosition(
-      position => {const location = JSON.stringify(position);
-        this.setState({ location });
-    },
-  error => Alert.alert(error.message),
-    { enableHighAccuracy: true, timeout: 20000, maximumAge: 1000 }
-  );
+      (position) => {
+        this.setState({ coords: position.coords });
+      },
+      (error) => alert(error.message),
+      { enableHighAccuracy: true, timeout: 20000, maximumAge: 1000 }
+    );
   }
-
-
 
   render() {
     const {Day, Time} = this.props.navigation.getParam("item", 'Error');
+    console.log(this.state.coords, "coords")
     return (
       <View>
       <View style={styles.container}>
@@ -84,15 +89,15 @@ class DailyPlan extends Component {
         {this.state.display ? <Text>Location: {this.state.location}</Text> : null}
       </View>
         <View>
-        <MapView
+        {this.state.coords && <MapView
             style={styles.map}
           initialRegion={{
-            latitude: 37.78825,
-            longitude: -122.4324,
-            latitudeDelta: 0.0922,
-            longitudeDelta: 0.0421,
+            latitude: this.state.coords.longitude,
+            longitude: this.state.coords.longitude,
+            latitudeDelta: 0.0022,
+            longitudeDelta: 0.0021,
           }}
-        />
+        />}
         </View>
       </View>
     );

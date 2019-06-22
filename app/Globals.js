@@ -65,9 +65,14 @@ global.styles = {
       borderRadius: 10,
     },
   map: {
+    
+      ...StyleSheet.absoluteFill,
+      top: 20,
+      backgroundColor: 'transparent',
+    
     height:500,
     width:500,
-    ...StyleSheet.absoluteFillObject,
+    // ...StyleSheet.absoluteFillObject,
   },
 
   
